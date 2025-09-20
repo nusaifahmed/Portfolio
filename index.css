@@ -1,0 +1,361 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Dark Luxury Theme */
+body {
+    background-image: url(3023620.jpg);
+  color: #e0e0e0;
+  line-height: 1.7;
+}
+
+/* Navbar */
+#nav {
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #444;
+}
+#nav1 a {
+  font-size: 26px;
+  font-weight: 800;
+  color: silver;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+#nav1 b {
+  color: gold;
+}
+#nav2 a {
+  margin-left: 20px;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 8px 12px;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+#nav2 a:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 10px gold;
+}
+
+/* Sections */
+section {
+  min-height: 100vh;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Home */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#home img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid silver;
+  box-shadow: 0 0 25px rgba(255,215,0,0.5);
+}
+#home strong {
+  color: gold;
+}
+#home h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+#home p {
+  font-size: 18px;
+  color: #aaa;
+}
+#aboutme {
+  padding: 12px 28px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 25px;
+  background: gold;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#aboutme:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 12px gold;
+}
+
+/* About */
+#about h1 {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: gold;
+}
+#about p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  color: #ccc;
+}
+
+/* Skills */
+#skills h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: gold;
+}
+.skillset {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.skill-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 25px;
+  width: 140px;
+  transition: 0.3s;
+  text-align: center;
+  border: 1px solid #333;
+}
+.skill-card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: silver;
+}
+.skill-card p {
+  color: #ccc;
+}
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px gold;
+  border-color: gold;
+}
+
+/* Contact */
+#contact h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: gold;
+}
+#contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#contact input, #contact textarea {
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  background: #1a1a1a;
+  color: white;
+}
+#contact button {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background: gold;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#contact button:hover {
+  background: silver;
+  color: black;
+  box-shadow: 0 0 15px gold;
+}
+/* Input & Textarea Styling */
+#contact input, 
+#contact textarea {
+  padding: 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  background: #1a1a1a;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 0 8px rgba(255, 215, 0, 0.1);
+}
+
+/* Hover Effect */
+#contact input:hover, 
+#contact textarea:hover {
+  border-color: silver;
+  box-shadow: 0 0 8px rgba(192,192,192,0.5);
+}
+
+/* Focus (when clicked/active) */
+#contact input:focus, 
+#contact textarea:focus {
+  border-color: gold;
+  background: #111;
+  box-shadow: 0 0 15px gold;
+  transform: scale(1.02);
+}
+
+
+/* Footer */
+footer {
+  background: #111;
+  color: #999;
+  text-align: center;
+  padding: 25px 10px;
+}
+footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 15px 0;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #1a1a1a;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  color: silver;
+  transition: 0.3s;
+}
+.social-links a:hover {
+  background: gold;
+  color: black;
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px gold;
+}
+/* Projects */
+#projects h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: gold;
+}
+#project-grid{
+    display: flex; 
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 25px; 
+  flex-wrap: wrap; 
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+.project-card {
+  background-image: url(aventure.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  transition: 0.3s;
+      border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  width: 40%;
+  height: 200px;
+  object-fit: cover;
+}   
+
+.project-card h3 {
+  margin: 15px;
+  color: gold;
+}
+.project-card p {
+  margin: 0 15px 15px 15px;
+  color: #ccc;
+  font-size: 14px;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px gold;
+}
+.project-card button {
+  margin: 0 15px 15px 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: gold;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.project-card button:hover {
+  background: white;
+  color: black;
+  box-shadow: 0 0 12px gold;
+}
+.project-card a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  #nav {
+    flex-direction: column;
+    padding: 15px;
+  }
+  #nav2 {
+    margin-top: 10px;
+  }
+  .skillset {
+    flex-direction: column;
+    align-items: center;
+  }
+  #home img {
+    width: 160px;
+    height: 160px;
+  }
+  #home h1 {
+    font-size: 28px;
+  }
+  #project-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-card {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+

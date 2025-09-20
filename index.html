@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nusaif Ahmed - Portfolio</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="index.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "1a33Mk8gqz2yzcnoZ",
+      });
+   })();
+</script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="nav">
+    <div id="nav1">
+      <a href="#"><b>Nusaif</b> Ahmed</a>
+    </div>
+    <div id="nav2">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <img src="profile1.jpg" alt="Profile Picture">
+    <h1>Hi, I'm <strong>Nusaif Ahmed</strong></h1>
+    <p>Passionate Full Stack Developer</p>
+    <a href="#about"><button id="aboutme">About Me</button></a>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h1>About Me</h1>
+    <p>
+        I'm Nusaif Ahmed, a dedicated Full Stack Developer with a passion for creating dynamic and responsive web applications. With a strong foundation in both front-end and back-end technologies, I strive to deliver seamless user experiences and efficient solutions. My journey in coding began with curiosity and has evolved into a fulfilling career where I continuously learn and adapt to new challenges. Let's build something amazing together!
+    </p>
+    <a href="#footer"><button id="aboutme">Let's Connect</button></a>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h1>My Skills</h1>
+    <div class="skillset">
+      <div class="skill-card"><i class="fab fa-java"></i><p>Java</p></div>
+      <div class="skill-card"><i class="fas fa-code"></i><p>C</p></div>
+      <div class="skill-card"><i class="fab fa-html5"></i><p>HTML</p></div>
+      <div class="skill-card"><i class="fab fa-css3-alt"></i><p>CSS</p></div>
+      <div class="skill-card"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
+      <div class="skill-card"><i class="fab fa-git-alt"></i><p>Git</p></div>
+    </div>
+  </section>
+  <!-- Projects -->
+  <section id="projects">
+    <h1>My Projects</h1>
+    <div id="project-grid">
+    <div class="project-card">
+      <h2>Aventure</h2>
+      <p>A system designed to manage adventure sport events and boost user engagement within the adventure sports community.</p>
+      <button><a href="aventure.pdf" download="aventure.pdf">View Project</button></a>
+    </div>
+    <div class="project-card">
+      <h2>Portfolio Website</h2>
+      <p>A personal portfolio website to showcase my skills, projects, and contact information.</p>
+      <button><a href="http://127.0.0.1:5500/index.html">View Project</button></a>
+    </div>
+    <div class="project-card">
+      <h2>Make My Trip</h2>
+      <p>A clone website of Make My Trip.</p>
+      <button><a href="http://127.0.0.1:5500/makemytrip.html">View Project</button></a>
+    </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h1>Contact Me</h1>
+<form onsubmit="sendMail(); return false;">
+  <input id="name" type="text" placeholder="Your Name" required>
+  <input id="email" type="email" placeholder="Your Email" required>
+  <textarea id="message" rows="5" placeholder="Your Message"></textarea>
+  <button type="submit">Send Message</button>
+</form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>Connect with me:</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/nusaifahmd?igsh=OTVyMDY2MDJrM2Jv&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/nusaifahmed" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/nusaifahmed?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:nusaifahmd@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://wa.me/919961180282"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://x.com/nusaifahmd?s=21&t=rY0ddzr-M5Z3OzQu0SV92g"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>© 2025 Nusaif Ahmed. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
